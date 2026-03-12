@@ -9,7 +9,7 @@ export default function Project() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get("https://portfolio-backend-six-iota.vercel.app/api/Project")
+    axios.get("https://portfolio-backend-five-rosy-57.vercel.app/api/Project")
       .then((res) => setProjects(res.data))
       .catch((err) => console.log(err));
   }, []);

@@ -10,7 +10,7 @@ export default function Myinformation() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`https://portfolio-backend-six-iota.vercel.app/api/User/${userId}`);
+        const res = await fetch(`https://portfolio-backend-five-rosy-57.vercel.app/api/User/${userId}`);
         const result = await res.json();
         setUserData(result.data);
       } catch (err) {
