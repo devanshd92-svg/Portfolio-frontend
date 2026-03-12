@@ -4,8 +4,9 @@ import { Home, ShoppingBag, Star, Phone } from "lucide-react"
 
 const items = [
   { title: "Home", path: "/", icon: Home },
-  { title: "Shop", path: "/shop", icon: ShoppingBag },
-  { title: "Feature", path: "/feature", icon: Star },
+  
+  { title: "About", path: "/about", icon: Star },
+  { title: "Project", path: "/Project", icon: ShoppingBag },
   { title: "Contact", path: "/contact", icon: Phone },
 ]
 
