@@ -12,7 +12,7 @@ const HeroSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`https://portfolio-backend-five-rosy-57.vercel.app/api/User/${userId}`);
+        const res = await fetch(`https://portfolio-backend-git-main-dhananjays-projects-4c1bc01e.vercel.app/api/User/${userId}`);
         const result = await res.json();
 
         setUserData(result.data); 
