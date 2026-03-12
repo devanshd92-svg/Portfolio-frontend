@@ -1,0 +1,55 @@
+/* hide scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: none;
+}
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #0f001f, #0a021a);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.navbar a {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 100px 50px;
+}
+
+.hero span {
+  color: #a855f7;
+}
+
+
+
+
+
+
+
+
