@@ -12,7 +12,7 @@ const HeroSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`http://localhost:3000/api/User/${userId}`);
+        const res = await fetch(`https://portfolio-backend-sandy-theta.vercel.app/api/User/${userId}`);
         const result = await res.json();
 
         setUserData(result.data); 
