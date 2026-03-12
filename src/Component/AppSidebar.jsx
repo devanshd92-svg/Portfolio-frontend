@@ -12,20 +12,26 @@ const items = [
 export function AppSidebar({ open, setOpen }) {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
-      <SheetContent side="right" className="w-64 p-6">
+      <SheetContent side="right" className="w-64 p-6 bg-white">
 
         <div className="flex flex-col gap-5 mt-8">
-          {items.map((item) => (
-            <NavLink
-              key={item.title}
-              to={item.path}
-              onClick={() => setOpen(false)}
-              className="flex items-center gap-3 text-lg hover:text-blue-600"
-            >
-              <item.icon size={18} />
-              {item.title}
-            </NavLink>
-          ))}
+
+          {items.map((item) => {
+            const Icon = item.icon
+
+            return (
+              <NavLink
+                key={item.title}
+                to={item.path}
+                onClick={() => setOpen(false)}
+                className="flex items-center gap-3 text-lg text-black hover:text-blue-600"
+              >
+                <Icon size={20} />
+                {item.title}
+              </NavLink>
+            )
+          })}
+
         </div>
 
       </SheetContent>
