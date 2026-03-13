@@ -60,7 +60,7 @@ export default function TechOrbitHero() {
 
   
   return (
-    <div className="relative min-h-[120vh] w-full my-10 text-white flex  justify-center ">
+    <div className="relative min-h-[120vh]  w-full my-10 text-white flex  justify-center  ">
       {/* ===== GLOBAL PURPLE GLOW ===== */}
       <div className="absolute  rounded-full blur-[140px]" />
 
@@ -131,7 +131,7 @@ export default function TechOrbitHero() {
         </svg>
 
         {/* ===== CENTER HUB GLOW ===== */}
-        <div className="absolute top-[220px] w-[520px] h-[520px] bg-purple-600/30 rounded-full blur-[120px]" />
+        <div className="absolute top-[220px]  bg-purple-600/30 rounded-full blur-[120px]" />
 
         {/* ===== CENTER LOGO ===== */}
         <motion.div
