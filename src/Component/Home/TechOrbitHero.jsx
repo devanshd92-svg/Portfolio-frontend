@@ -60,7 +60,7 @@ export default function TechOrbitHero() {
 
   
   return (
-    <div className="relative min-h-[150vh] w-full my-10 text-white flex  justify-center ">
+    <div className="relative min-h-[120vh] w-full my-10 text-white flex  justify-center ">
       {/* ===== GLOBAL PURPLE GLOW ===== */}
       <div className="absolute  rounded-full blur-[140px]" />
 
@@ -146,8 +146,8 @@ export default function TechOrbitHero() {
         </motion.div>
 
         {/* ===== ORBIT RINGS (PERSPECTIVE) ===== */}
-       <div className="absolute top-[35%] w-full h-[28vh] sm:h-[30vh] lg:h-[35vh] pointer-events-none ">
-      {[1.5, 2,2.5,3].map((ring, ringIndex) => {
+       <div className="absolute overflow-visible w-full h-[28vh] sm:h-[35vh] top-60  lg:h-[40vh] xl:top-70 pointer-events-none ">
+      {[2,2,2, 2,2,2].map((ring, ringIndex) => {
         
         // Responsive ring size
         const baseWidth = screenWidth * 0.22;
@@ -188,7 +188,7 @@ export default function TechOrbitHero() {
               return (
                 <motion.div
                   key={i}
-                  className="absolute flex items-center justify-center
+                  className="absolute  flex items-center justify-center
                   bg-white/10 rounded-full border border-white/20 backdrop-blur-md"
                   style={{
                     width: screenWidth < 640 ? 30 : 40,
